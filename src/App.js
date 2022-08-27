@@ -1,15 +1,17 @@
+import React from 'react';
+
+import Timeline from './components/timeline/Timeline';
+import Projects from './components/projects/Projects';
+import Intro from './components/intro/Intro';
+
 import './App.css';
 
 function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <h1>RedSuns Chan</h1>
-		<h2>Analyst Programmer</h2>
-	  	<p>website is still in development...</p>
-      </header>
-    </div>
-  );
+  return <>
+      <Intro></Intro>
+      <Timeline></Timeline>
+      <Projects></Projects>
+  </>
 }
 
 export default App;
