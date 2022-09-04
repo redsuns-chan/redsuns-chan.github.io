@@ -27,6 +27,7 @@ code {
 
 .section {
   height: 100vh;
+  transition: all 500ms;
 }
 
 .section > div {

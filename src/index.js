@@ -12,7 +12,7 @@ const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(<ReactFullpage
   licenseKey={reactFullpageKey}
   scrollingSpeed={800}
-  anchors={['workexp']}
+  anchors={['workexp', 'projects', 'about', 'contact']}
 
   render={ ({state, fullpageApi}) => {
     return <ReactFullpage.Wrapper>
@@ -20,15 +20,15 @@ root.render(<ReactFullpage
         <Intro fullpageApi={fullpageApi}></Intro>
       </div>
       <div className="section" data-anchor="workexp">
-        <WorkExp></WorkExp>
+        <WorkExp fullpageApi={fullpageApi}></WorkExp>
       </div>
-      <div className="section">
+      <div className="section" data-anchor="projects">
         <h1>Projects</h1>
       </div>
-      <div className="section">
+      <div className="section" data-anchor="about">
         <h1>About me</h1>
       </div>
-      <div className="section">
+      <div className="section" data-anchor="contact">
         <h1>Contact me</h1>
       </div>
     </ReactFullpage.Wrapper>
