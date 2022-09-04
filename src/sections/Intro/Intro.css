@@ -1,0 +1,109 @@
+
+.intro {
+    position: relative;
+    background: linear-gradient(0deg, rgba(60, 68, 68, 0.65), rgba(60, 68, 68, 0.65)), 
+                url("/res/images/background-intro-hd.jpeg");
+    background-size: cover;
+    background-position: center;
+    filter: saturate(200%);
+}
+
+.intro section {
+    background-color: grey;
+    display: block;
+}
+
+.intro #name {
+    position: absolute;
+    width: fit-content;
+    display: block;
+    left: 5%;
+    top: 50%;
+    transform: translateY(-50%);
+    font-size: 2.7rem;
+    padding: 2.5rem;
+    color: white;
+}
+
+.intro #name h1 {
+    margin: 0.2rem;
+}
+
+.intro #name h2 {
+    font-size: 1.9rem;
+    font-weight: normal;
+}
+
+.intro span.bold {
+    color: rgb(255, 151, 55);
+    font-weight: bold;
+}
+
+.intro .skill-tags-row {
+    margin-bottom: 0.5rem;
+}
+
+.intro .scroll-button {
+    display: block;
+    position: relative;
+    top: 85%;
+    color: white;
+    text-align: center;
+    font-weight: 100;
+    font-size: 1.5rem;
+}
+
+.intro .scroll-button p {
+    margin: 4px;
+    font-size: 1.9rem
+}
+
+.intro .scroll-button {
+    font-size: 2.6rem;
+}
+
+.intro .scroll-button a {
+    text-decoration: none;
+    color: white;
+}
+
+.intro .social-links {
+    position: relative;
+    left: 80%;
+    top: -5%;
+    cursor: pointer;
+}
+
+.intro .social-links:hover {
+    cursor: pointer;
+}
+
+.intro .social-links a {
+    font-size: 3.5rem;
+    margin: 1rem;
+    color: rgb(225, 225, 225);
+}
+
+.intro .social-links a {
+    transition: color 300ms;
+}
+
+.intro .social-links .linkedin:hover {
+    color: rgb(115, 127, 212);
+}
+
+.intro .social-links .github:hover {
+    color: rgb(194, 115, 212);
+}
+
+.intro .social-links .twitter:hover {
+    color: rgb(115, 210, 212);
+}
+
+.intro .social-links .medium:hover {
+    color: rgb(128, 128, 128);
+}
+
+.intro .social-links a * {
+    text-shadow: 0 1rem 1rem rgba(60, 68, 68, 1);
+}

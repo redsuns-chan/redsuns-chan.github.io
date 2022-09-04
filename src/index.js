@@ -1,15 +1,39 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
 import './index.css';
-import App from './App';
 import reportWebVitals from './reportWebVitals';
+import ReactFullpage from '@fullpage/react-fullpage';
+
+import reactFullpageKey from './react-fullpage-key';
+import Intro from './sections/Intro/Intro';
+import WorkExp from './sections/WorkExp/WorkExp';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
-root.render(
-  <React.StrictMode>
-    <App />
-  </React.StrictMode>
-);
+root.render(<ReactFullpage
+  licenseKey={reactFullpageKey}
+  scrollingSpeed={800}
+  anchors={['workexp']}
+
+  render={ ({state, fullpageApi}) => {
+    return <ReactFullpage.Wrapper>
+      <div className="section">
+        <Intro fullpageApi={fullpageApi}></Intro>
+      </div>
+      <div className="section" data-anchor="workexp">
+        <WorkExp></WorkExp>
+      </div>
+      <div className="section">
+        <h1>Projects</h1>
+      </div>
+      <div className="section">
+        <h1>About me</h1>
+      </div>
+      <div className="section">
+        <h1>Contact me</h1>
+      </div>
+    </ReactFullpage.Wrapper>
+  }}
+/>);
 
 // If you want to start measuring performance in your app, pass a function
 // to log results (for example: reportWebVitals(console.log))

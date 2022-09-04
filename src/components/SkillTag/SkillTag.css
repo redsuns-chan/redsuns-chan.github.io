@@ -1,0 +1,17 @@
+
+.skill-tag {
+    font-weight: bold;
+    font-size: 1.1rem;
+    background-color: rgba(200, 200, 200, 0.3);
+    width: fit-content;
+    padding: 8px 18px;
+    border-radius: 90px;
+    transition: 350ms all;
+    margin: 0.4rem;
+    display: inline;
+}
+
+.skill-tag:hover {
+    transition: 350ms all;
+    background-color: rgba(170, 170, 170, 0.7);
+}
