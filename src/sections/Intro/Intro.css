@@ -1,7 +1,8 @@
 
 .intro {
     position: relative;
-    background: url("/res/images/background-intro.webp");
+    background-color: rgb(53, 74, 92);
+    background-image: url("/res/images/background-intro.webp");
     background-size: cover;
     background-position: center;
 }

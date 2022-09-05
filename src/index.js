@@ -17,7 +17,7 @@ root.render(<ReactFullpage
     return <>
       <div className='warning'>Website is still under construction</div>
       <ReactFullpage.Wrapper>
-        <div className="section">
+        <div className="section" data-anchor="intro">
           <Intro fullpageApi={fullpageApi}></Intro>
         </div>
         <div className="section" data-anchor="workexp">
