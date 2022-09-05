@@ -14,23 +14,26 @@ root.render(<ReactFullpage
   anchors={['workexp', 'projects', 'about', 'contact']}
 
   render={ ({state, fullpageApi}) => {
-    return <ReactFullpage.Wrapper>
-      <div className="section">
-        <Intro fullpageApi={fullpageApi}></Intro>
-      </div>
-      <div className="section" data-anchor="workexp">
-        <WorkExp fullpageApi={fullpageApi}></WorkExp>
-      </div>
-      <div className="section" data-anchor="projects">
-        <h1>Projects</h1>
-      </div>
-      <div className="section" data-anchor="about">
-        <h1>About me</h1>
-      </div>
-      <div className="section" data-anchor="contact">
-        <h1>Contact me</h1>
-      </div>
-    </ReactFullpage.Wrapper>
+    return <>
+      <div className='warning'>Website is still under construction</div>
+      <ReactFullpage.Wrapper>
+        <div className="section">
+          <Intro fullpageApi={fullpageApi}></Intro>
+        </div>
+        <div className="section" data-anchor="workexp">
+          <WorkExp fullpageApi={fullpageApi}></WorkExp>
+        </div>
+        <div className="section" data-anchor="projects">
+          <h1>Projects</h1>
+        </div>
+        <div className="section" data-anchor="about">
+          <h1>About me</h1>
+        </div>
+        <div className="section" data-anchor="contact">
+          <h1>Contact me</h1>
+        </div>
+      </ReactFullpage.Wrapper>
+    </>
   }}
 />);
 
