@@ -1,0 +1,90 @@
+
+.intro {
+    position: relative;
+    background: url("/res/images/background-intro.webp");
+    background-size: cover;
+    background-position: center;
+}
+
+.intro #name {
+    position: absolute;
+    width: fit-content;
+    display: block;
+	margin-left: 15vw;
+	margin-top: 47vh;
+    transform: translateY(-50%);
+    font-size: 2.7rem;
+    padding: 2.5rem;
+    color: white;
+}
+
+.intro #name h1 {
+    margin: 0.2rem;
+}
+
+.intro #name h2 {
+    font-size: 1.9rem;
+    font-weight: normal;
+}
+
+.intro span.bold {
+    color: rgb(255, 151, 55);
+    font-weight: bold;
+}
+
+.intro .skill-tags-row {
+    margin-bottom: 0.5rem;
+}
+
+.social-links {
+    position: absolute;
+    top: 3vh;
+    right: 3vw;
+}
+
+.intro .scroll-button {
+    display: block;
+    position: relative;
+    top: 85%;
+    color: white;
+    text-align: center;
+    font-weight: 100;
+    font-size: 1.5rem;
+	cursor: pointer;
+	transition: all 300ms;
+}
+
+.intro .scroll-button:hover {
+	transition: all 300ms;
+	text-shadow: 0px 3px 2px black;
+}
+
+.intro .scroll-button p {
+    margin: 4px;
+    font-size: 1.9rem
+}
+
+.intro .scroll-button {
+    font-size: 2.6rem;
+}
+
+.intro .scroll-button a {
+    text-decoration: none;
+    color: white;
+}
+
+.icon-linkedin:hover {
+    color: rgb(115, 127, 212);
+}
+
+.icon-github:hover {
+    color: rgb(194, 115, 212);
+}
+
+.icon-twitter:hover {
+    color: rgb(115, 210, 212);
+}
+
+.icon-medium:hover {
+    color: rgb(128, 128, 128);
+}
