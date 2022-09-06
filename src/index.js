@@ -10,26 +10,23 @@ import Skills from './sections/Skills/Skills';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(<ReactFullpage
-  licenseKey={reactFullpageKey}
-  scrollingSpeed={800}
-  anchors={['workexp', 'projects', 'about', 'contact']}
+	licenseKey={reactFullpageKey}
+	scrollingSpeed={800}
+	anchors={['workexp', 'projects', 'about', 'contact']}
 
-  render={ ({state, fullpageApi}) => {
-    return <>
-      <div className='warning'>Website is still under construction</div>
-      <ReactFullpage.Wrapper>
-        <div className="section" data-anchor="intro">
-          <Intro fullpageApi={fullpageApi}></Intro>
-        </div>
-        <div className="section" data-anchor="workexp">
-          <WorkExp fullpageApi={fullpageApi}></WorkExp>
-        </div>
-        <div className='section' data-anchor='skills'>
-          <Skills fullpageApi={fullpageApi}></Skills>
-        </div>
-      </ReactFullpage.Wrapper>
-    </>
-  }}
+	render={({ state, fullpageApi }) => {
+		return (<ReactFullpage.Wrapper>
+			<div className='section' id='section-intro' data-anchor='intro'>
+				<Intro fullpageApi={fullpageApi}></Intro>
+			</div>
+			<div className='section' id='section-workexp' data-anchor='workexp'>
+				<WorkExp fullpageApi={fullpageApi}></WorkExp>
+			</div>
+			<div className='section' data-anchor='skills'>
+				<Skills fullpageApi={fullpageApi}></Skills>
+			</div>
+		</ReactFullpage.Wrapper>)
+	}}
 />);
 
 // If you want to start measuring performance in your app, pass a function

@@ -1,6 +1,9 @@
 
-.work-exp {
+#section-workexp {
     background-color: rgb(58, 63, 67);
+}
+
+.work-exp {
     color: white;
     height: 100vh;
 }
