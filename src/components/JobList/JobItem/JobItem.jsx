@@ -1,4 +1,6 @@
 
+import './JobItem.css'
+
 export default function JobItem({company, title, start, end}) {
     return <>
         <div className='job-item'>

@@ -1,0 +1,12 @@
+
+.job-item {
+    margin: 1rem;
+}
+
+.job-item .company {
+    font-size: 2rem;
+}
+
+.job-item .job-title {
+    font-size: 1.5rem;
+}

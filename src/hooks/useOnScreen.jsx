@@ -4,6 +4,10 @@ import { useState, useEffect } from "react"
 export default function useOnScreen(ref) {
     const [isIntersecting, setIntersecting] = useState(false)
 
+
+    /**
+     * (entries: IntersectionObserverEntry[], observer: IntersectionObserver)
+     */
     const observer = new IntersectionObserver(
         ([entry]) => setIntersecting(entry.isIntersecting)
     )

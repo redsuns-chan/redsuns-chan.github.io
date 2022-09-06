@@ -1,0 +1,12 @@
+
+.edu-item {
+    margin: 1rem;
+}
+
+.edu-item .edu-inst {
+    font-size: 2rem;
+}
+
+.edu-item .edu-course {
+    font-size: 1.5rem;
+}

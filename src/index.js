@@ -23,15 +23,6 @@ root.render(<ReactFullpage
         <div className="section" data-anchor="workexp">
           <WorkExp fullpageApi={fullpageApi}></WorkExp>
         </div>
-        <div className="section" data-anchor="projects">
-          <h1>Projects</h1>
-        </div>
-        <div className="section" data-anchor="about">
-          <h1>About me</h1>
-        </div>
-        <div className="section" data-anchor="contact">
-          <h1>Contact me</h1>
-        </div>
       </ReactFullpage.Wrapper>
     </>
   }}
