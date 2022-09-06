@@ -13,7 +13,6 @@ export default function WorkExp({fullpageApi}) {
             <h1>Work <div className='title-keyword'>Experiences</div></h1>
             <div id='job-and-edu-list'>
                 <JobList src={jobs}/>
-                <EduList src={edu}/>
             </div>
         </div>
     )

@@ -6,6 +6,7 @@ import ReactFullpage from '@fullpage/react-fullpage';
 import reactFullpageKey from './react-fullpage-key';
 import Intro from './sections/Intro/Intro';
 import WorkExp from './sections/WorkExp/WorkExp';
+import Skills from './sections/Skills/Skills';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(<ReactFullpage
@@ -22,6 +23,9 @@ root.render(<ReactFullpage
         </div>
         <div className="section" data-anchor="workexp">
           <WorkExp fullpageApi={fullpageApi}></WorkExp>
+        </div>
+        <div className='section' data-anchor='skills'>
+          <Skills fullpageApi={fullpageApi}></Skills>
         </div>
       </ReactFullpage.Wrapper>
     </>

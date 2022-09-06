@@ -12,13 +12,11 @@ export default function Intro({fullpageApi}) {
                 <h1>Hi, I'm <span className="bold">RedSuns</span></h1>
                 <h1>A Software Engineer</h1>
                 <h2>who experienced in <b>backend</b> and <b>front-end</b> development</h2>
-                <div className="skill-tags-row">
+                <div className='skill-tags'>
                     <SkillTag>SpringBoot</SkillTag>
                     <SkillTag>Node.js</SkillTag>
                     <SkillTag>MongoDB</SkillTag>
                     <SkillTag>SQL</SkillTag>
-                </div>
-                <div className="skill-tags-row">
                     <SkillTag>Angular</SkillTag>
                     <SkillTag>React</SkillTag>
                     <SkillTag>HTML5</SkillTag>

@@ -11,12 +11,12 @@
     position: absolute;
     width: fit-content;
     display: block;
-	margin-left: 15vw;
-	margin-top: 47vh;
-    transform: translateY(-50%);
     font-size: 2.7rem;
     padding: 2.5rem;
     color: white;
+    margin-left: 15vw;
+    margin-top: 47vh;
+    transform: translateY(-50%);
 }
 
 .intro #name h1 {
@@ -88,4 +88,24 @@
 
 .icon-medium:hover {
     color: rgb(128, 128, 128);
+}
+
+@media screen and (max-device-width: 1023px)  {
+    
+    .intro #name {
+        display: block;
+        font-size: 2.5rem;
+        padding: 2.5rem;
+        color: white;
+        width: 85vw;
+        margin-left: 0vw;
+        margin-top: 47vh;
+        transform: translateY(-50%);
+    }
+
+    .skill-tags {
+        width: 90vw;
+        display: block;
+    }
+
 }
