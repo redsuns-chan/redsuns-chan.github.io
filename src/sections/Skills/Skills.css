@@ -1,7 +1,86 @@
 
-.skills {
-    background-color: rgb(53, 74, 92);
+#section-skills {
     background-image: url("/res/images/section-skills.webp");
+    background-color: rgb(53, 74, 92);
     background-size: cover;
     background-position: center;
+}
+
+.skills {
+	color: white;
+}
+
+.skills > * {
+	margin: auto;
+	text-align: center;
+}
+
+@media screen and (min-width: 1600px) {
+	.skills > * {
+		width: 40vw;
+	}
+}
+
+.skill-panels > .skill-panel {
+	background-color: #3D4342;
+	border-radius: 20px;
+	box-shadow: 0px 2px 4px 0px rgba(0, 0, 0, 0.3);
+}
+
+.skills > * {
+	width: 60vw;
+}
+
+.skill-panels > .skill-panel {
+	display: inline-block;
+	max-width: 300px;
+	vertical-align: top;
+	height: 300px;
+	width: 30%;
+	margin: 0.3rem;
+}
+
+.skill-panel > p {
+	width: 80%;
+	text-align: center;
+	margin: auto;
+	margin-bottom: 2rem;
+}
+
+
+@media screen and (max-width: 999px) {
+	.skills > * {
+		width: 85vw;
+	}
+}
+
+@media screen and (max-width: 599px) {
+	
+	.skills > * {
+		width: 90vw;
+	}
+
+	.skill-panels > .skill-panel {
+		display: block;
+		width: 80%;
+		margin: 0.5rem auto;
+	}
+}
+
+.skills > div > h1 {
+	font-size: 2rem;
+}
+
+.skills > div > p {
+	font-size: 1.3rem;
+}
+
+.skill-icon {
+	font-size: 6rem;
+	margin: 3rem;
+	margin-bottom: 0.2rem;
+}
+
+.region {
+	padding: 2rem auto;
 }

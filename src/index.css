@@ -1,6 +1,6 @@
 
 html {
-  font-size: 1.2vmin !important;
+  font-size: 16px !important;
 }
 
 * {
@@ -47,4 +47,22 @@ code {
   padding: 8px 24px;
   z-index: 99;
   border-radius: 5px;
+}
+
+span.keyword {
+	color: #ff9421;
+}
+
+a.hyperlinks {
+	color: rgba(255, 148, 33, 1);
+	font-weight: bold;
+	text-decoration: none;
+	border-bottom: 2px solid rgba(255, 148, 33, 1);
+	transition: all 300ms;
+}
+
+a.hyperlinks:hover {
+	background-color: rgba(255, 148, 33, 1);
+	color: black;
+	border-radius: 5px;
 }

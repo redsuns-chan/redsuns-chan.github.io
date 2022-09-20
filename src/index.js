@@ -19,7 +19,7 @@ root.render(<ReactFullpage
 			<div className='section' id='section-intro' data-anchor='intro'>
 				<Intro fullpageApi={fullpageApi}></Intro>
 			</div>
-			<div className='section' data-anchor='skills'>
+			<div className='section' id='section-skills' data-anchor='skills'>
 				<Skills fullpageApi={fullpageApi}></Skills>
 			</div>
 			<div className='section' id='section-workexp' data-anchor='workexp'>
