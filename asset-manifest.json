@@ -1,13 +1,14 @@
 {
   "files": {
-    "main.css": "/static/css/main.bc716405.css",
-    "main.js": "/static/js/main.b77c84df.js",
+    "main.css": "/static/css/main.bab8b53a.css",
+    "main.js": "/static/js/main.6e498329.js",
     "static/js/27.184fa96b.chunk.js": "/static/js/27.184fa96b.chunk.js",
-    "static/media/background-intro-hd.webp": "/static/media/background-intro-hd.cd2668b9d188a19ada8d.webp",
+    "static/media/section-skills.webp": "/static/media/section-skills.2b5bbdaa61d45ac79472.webp",
+    "static/media/section-hero.webp": "/static/media/section-hero.28ae7ef7b95bde30e5d3.webp",
     "index.html": "/index.html"
   },
   "entrypoints": [
-    "static/css/main.bc716405.css",
-    "static/js/main.b77c84df.js"
+    "static/css/main.bab8b53a.css",
+    "static/js/main.6e498329.js"
   ]
 }
