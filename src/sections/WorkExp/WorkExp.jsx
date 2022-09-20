@@ -1,11 +1,9 @@
 
 import JobList from '../../components/JobList/JobList'
-import EduList from '../../components/EduList/EduList'
 
 import './WorkExp.css'
 
 import jobs from '../../data/jobs.json'
-import edu from '../../data/edu.json'
 
 export default function WorkExp({fullpageApi}) {    
     return (
