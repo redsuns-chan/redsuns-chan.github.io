@@ -3,9 +3,6 @@ import "./Intro.css";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { solid, brands } from '@fortawesome/fontawesome-svg-core/import.macro' // <-- import styles to be used
 import SocialIcon from "../../components/SocialIcon/SocialIcon";
-import SkillTagList from "../../components/SkillTagList/SkillTagList";
-
-import skillList from '../../data/skills.json'
 
 export default function Intro({fullpageApi}) {
     return (
@@ -14,12 +11,13 @@ export default function Intro({fullpageApi}) {
                 <h1>Hi, I'm <span className='bold'>RedSuns</span></h1>
                 <h1>A Software Engineer</h1>
                 <h2>who experienced in <b>backend</b> and <b>front-end</b> development</h2>
-				<SkillTagList src={skillList} />
-            </div>
-
-            <div className='scroll-button' onClick={ () => fullpageApi.moveSectionDown() }>
-                <p>SCROLL DOWN</p>
-                <FontAwesomeIcon icon={solid('angle-down')} />
+                <a href='#skills'>
+                    <button className='hero-button'><FontAwesomeIcon icon={solid('magnifying-glass')} />Know More</button>
+                </a>
+                
+                <a href='https://drive.google.com/file/d/1WYcn1ZpTndt2ADBVpTCjTXNb5_h1SFC_/view?usp=sharing' target='_blank' rel='noreferrer'>
+                    <button className='hero-button white'><FontAwesomeIcon icon={solid('cloud-arrow-down')} />My Resume</button>
+                </a>
             </div>
 
             <div className='social-links'>

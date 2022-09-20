@@ -1,6 +1,6 @@
 #section-intro {
     background-color: rgb(53, 74, 92);
-    background-image: url("/res/images/background-intro-hd.webp");
+    background-image: url("/res/images/section-hero.webp");
     background-size: cover;
     background-position: center;
 }
@@ -86,6 +86,39 @@
 
 .icon-medium:hover {
     color: rgb(128, 128, 128);
+}
+
+.hero-button {
+    text-transform: uppercase;
+    font-family: 'Roboto';
+    padding: 1vw 2vw 1vw 2vw;
+    margin: 8px;
+    border-radius: 45px;
+    border: none;
+    background-color: rgba(255, 148, 33, 0.8);
+    color: white;
+    vertical-align: middle;
+    font-size: 1.6rem;
+    font-weight: bold;
+    transition: background-color 200ms;
+}
+
+.hero-button:hover {
+    cursor: pointer;
+    background-color: rgba(255, 148, 33, 1);
+}
+
+.hero-button.white {
+    background-color: rgba(255, 255, 255, 0.7);
+    color: black;
+}
+
+.hero-button.white:hover {
+    background-color: rgba(255, 255, 255, 1);
+}
+
+.hero-button > * {
+    padding-right: 8px;
 }
 
 @media screen and (min-width: 1600px) {

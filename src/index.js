@@ -19,11 +19,11 @@ root.render(<ReactFullpage
 			<div className='section' id='section-intro' data-anchor='intro'>
 				<Intro fullpageApi={fullpageApi}></Intro>
 			</div>
-			<div className='section' id='section-workexp' data-anchor='workexp'>
-				<WorkExp fullpageApi={fullpageApi}></WorkExp>
-			</div>
 			<div className='section' data-anchor='skills'>
 				<Skills fullpageApi={fullpageApi}></Skills>
+			</div>
+			<div className='section' id='section-workexp' data-anchor='workexp'>
+				<WorkExp fullpageApi={fullpageApi}></WorkExp>
 			</div>
 		</ReactFullpage.Wrapper>)
 	}}
