@@ -4,9 +4,6 @@ import reportWebVitals from './reportWebVitals';
 import ReactFullpage from '@fullpage/react-fullpage';
 
 import reactFullpageKey from './react-fullpage-key';
-import Intro from './sections/Intro/Intro';
-import WorkExp from './sections/WorkExp/WorkExp';
-import Skills from './sections/Skills/Skills';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(<ReactFullpage
@@ -16,14 +13,9 @@ root.render(<ReactFullpage
 
 	render={({ state, fullpageApi }) => {
 		return (<ReactFullpage.Wrapper>
-			<div className='section' id='section-intro' data-anchor='intro'>
-				<Intro fullpageApi={fullpageApi}></Intro>
-			</div>
-			<div className='section' id='section-skills' data-anchor='skills'>
-				<Skills fullpageApi={fullpageApi}></Skills>
-			</div>
-			<div className='section' id='section-workexp' data-anchor='workexp'>
-				<WorkExp fullpageApi={fullpageApi}></WorkExp>
+			<div className='section'>
+				<h1>RedSuns Chan</h1>
+				<h2>Software Engineer</h2>
 			</div>
 		</ReactFullpage.Wrapper>)
 	}}
