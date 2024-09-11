@@ -15,7 +15,7 @@ export default function Intro({fullpageApi}) {
                     <button className='hero-button'><FontAwesomeIcon icon={solid('magnifying-glass')} />Know More</button>
                 </a>
                 
-                <a href='https://drive.google.com/file/d/1WYcn1ZpTndt2ADBVpTCjTXNb5_h1SFC_/view?usp=sharing' target='_blank' rel='noreferrer'>
+                <a href='https://drive.google.com/file/d/1yqhb7UeIyJKIO2Ec3sk7hZtIs4xurhlT/view?usp=sharing' target='_blank' rel='noreferrer'>
                     <button className='hero-button white'><FontAwesomeIcon icon={solid('cloud-arrow-down')} />My Resume</button>
                 </a>
             </div>
