@@ -1,0 +1,8 @@
+# Serve content on port 80
+:80 {
+    # Set the root directory for the server
+    root * /usr/share/caddy
+
+    # Enable the file server
+    file_server
+}

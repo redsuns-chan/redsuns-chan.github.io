@@ -1,0 +1,312 @@
+@import url('https://fonts.googleapis.com/css2?family=Red+Hat+Display:wght@400;700&display=swap');
+
+body {
+	font-family: 'Red Hat Display', sans-serif;
+	padding: 0px;
+	margin: 0px;
+	animation: backgroundLoop 10s infinite;
+	background: linear-gradient(270deg, #edf2f3, #f1ebeb, #ecf3ec, #ededf3, #eff3f4);
+	background-size: 1000% 1000%;
+}
+
+main {
+	width: 100%;
+}
+
+@keyframes backgroundLoop {
+	0% { background-position: 0% 50%; }
+	25% { background-position: 50% 50%; }
+	50% { background-position: 100% 50%; }
+	75% { background-position: 50% 50%; }
+	100% { background-position: 0% 50%; }
+}
+
+header > nav {
+	width: 100%;
+	margin: 0;
+	padding: 0;
+	height: 52px;
+	text-align: right; /* Align navigation to the right */
+	display: flex;
+	justify-content: flex-end; /* Ensure links are aligned to the right */
+	align-items: flex-end; /* Align links to the bottom */
+}
+
+header > nav > a#resume {
+	border: 1px solid #000;
+	padding: 8px 16px;
+	display: inline-block; /* Ensure links are inline */
+	margin-right: 52px;
+	color: #000;
+	text-decoration: none;
+	transition: background-color 0.2s ease-in-out, color 0.2s ease-in-out;
+}
+
+header > nav > a#resume:hover {
+	background-color: #000;
+	color: #FFF;
+	transition: background-color 0.2s ease-in-out, color 0.2s ease-in-out;
+}
+
+#hero-fullstack:hover {
+	font-size: 5rem !important;
+}
+
+section {
+	padding: 20px;
+}
+
+section > * {
+	width: 90%;
+	margin: auto;
+}
+
+section#hero {
+	width: 100%;
+	text-align: center;
+	margin: auto;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center; /* Center content horizontally */
+	height: 80vh; /* Make the hero section fill the whole page */
+	padding: 0; /* Remove any padding */
+}
+
+section#hero .vcenter {
+	transform: translateY(0); /* Remove translateY to ensure proper centering */
+	margin: 0; /* Remove any margin */
+	padding: 0; /* Remove any padding */
+}
+
+section#hero h1 {
+	font-size: 3rem;
+	margin: 0; /* Remove any margin */
+	padding: 0; /* Remove any padding */
+}
+
+section#hero p {
+	margin: 10px 0; /* Add some margin for spacing */
+	padding: 0; /* Remove any padding */
+	font-size: 1.2rem;
+	line-height: 1.5rem;
+}
+
+section#hero #tags {
+	margin: 20px 0; /* Add some margin for spacing */
+	padding: 0; /* Remove any padding */
+}
+
+section#hero #social-links {
+	margin: 20px 0; /* Add some margin for spacing */
+	padding: 0; /* Remove any padding */
+}
+
+@media (max-width: 768px) {
+	section#hero {
+		width: 90%;
+		height: 100vh;
+		margin: auto;
+	}
+	
+	section#hero h1 {
+		font-size: 2.5rem;
+	}
+}
+
+@media (max-width: 480px) {
+	section#hero h1 {
+		font-size: 2rem;
+	}
+}
+
+section#hero #tags .tag {
+	display: inline-block;
+	padding: 4px 12px;
+	border-radius: 10px;
+	color: #436ce6;
+	font-weight: bold;
+	transition: background-color 0.2s ease-in-out;
+	text-transform: uppercase;
+}
+
+section#hero #tags .tag:hover {
+	color: #FFF;
+	background-color: #6189ff;
+	transition: background-color 0.2s ease-in-out;
+}
+
+#social-links a {
+	color: #000;
+	text-decoration: none;
+	font-size: 3rem;
+	margin: 8px;
+}
+
+#icon-linkedin:hover {
+	color: #6163d8;
+}
+
+#icon-github:hover {
+	color: #bf75d6;
+}
+
+#icon-twitter:hover {
+	color: #7bb9d6;
+}
+
+.project {
+	margin: auto;
+	display: flex;
+	align-items: center; /* Align project-info to the middle */
+	flex-wrap: wrap; /* Allow wrapping for responsive design */
+}
+
+.project > * {
+	display: inline-block;
+	width: 50%;
+}
+
+.project > .project-image img {
+	width: 360px;
+	filter: drop-shadow(0 4px 13px rgba(0, 0, 0, 0.3)); /* Add shadow to the non-transparent part of the image */
+}
+
+.project.left > .project-info {
+	text-align: right;
+	align-self: center; /* Align project-info to the middle */
+}
+
+.project.right > .project-info {
+	text-align: left;
+	align-self: center; /* Align project-info to the middle */
+}
+
+@media (max-width: 768px) {
+	.project > * {
+		width: 100%; /* Make each project item take full width on smaller screens */
+		text-align: center; /* Center text on smaller screens */
+	}
+
+	.project > .project-image img {
+		width: 100%; /* Make images responsive */
+	}
+}
+
+.fade-in {
+	opacity: 0;
+	visibility: hidden;
+	transform: translateY(40px); /* Correct the transform value */
+	transition: opacity 1s ease-in-out, visibility 1s ease-in-out, transform 0.7s ease-in-out;
+}
+
+.fade-in.visible {
+	opacity: 1;
+	visibility: visible;
+	transform: translateY(0); /* Ensure the transform value is correct */
+	transition: opacity 1s ease-in-out, visibility 1s ease-in-out, transform 1s ease-in-out;
+}
+
+section .section-header {
+	text-align: center;
+	margin-bottom: 48px;
+}
+
+section .section-header h2 {
+	font-size: 2.5rem;
+	margin: 0;
+	padding: 0;
+}
+
+::selection {
+	background: rgba(0, 122, 255, 0.3); /* MacBook-style blue color with transparency */
+}
+
+.timeline {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	position: relative;
+	margin: 20px 0;
+	padding: 0;
+	list-style: none;
+}
+
+.timeline::before {
+	content: '';
+	position: absolute;
+	top: 50%;
+	left: 0;
+	width: 100%;
+	height: 2px;
+	background: #ddd;
+	transform: translateY(-50%);
+	z-index: 0;
+}
+
+.timeline-item {
+	position: relative;
+	width: 20%;
+	text-align: center;
+}
+
+.timeline-item::before {
+	content: attr(data-year); /* Display the year */
+	position: absolute;
+	top: -30px; /* Position the year above the point */
+	left: 50%;
+	transform: translateX(-50%);
+	font-weight: bold;
+	color: #000;
+}
+
+.timeline-item::after {
+	content: '';
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	width: 20px;
+	height: 20px;
+	background: #fff;
+	border: 2px solid #000;
+	border-radius: 50%;
+	transform: translate(-50%, -50%);
+	z-index: 1;
+}
+
+.timeline-content {
+	background: #fff;
+	padding: 10px;
+	border: 1px solid #ddd;
+	border-radius: 5px;
+	position: relative;
+	z-index: 2;
+	margin-top: 20px; /* Add some space between the point and the content */
+	transition: transform 0.3s ease-in-out;
+}
+
+.timeline-item:hover .timeline-content {
+	transform: scale(1.1); /* Enlarge the content on hover */
+	box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Add a subtle shadow */
+}
+
+.project-info .techs i {
+	font-size: 48px;
+}
+
+#sosim-simworld {
+	width: 480px;
+	height: 670px;
+}
+
+#sosim-simworld #prod-sosim {
+	min-width: 480px;
+	position: absolute;
+	top: 400px;
+	right: 300px;
+}
+
+#sosim-simworld #prod-simworld {
+	min-width: 480px;
+	position: absolute;
+}

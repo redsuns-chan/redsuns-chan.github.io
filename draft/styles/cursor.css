@@ -1,0 +1,19 @@
+body * {
+	cursor: none; /* Hide the default cursor */
+}
+
+.custom-cursor {
+	position: fixed;
+	width: 20px;
+	height: 20px;
+	border-radius: 50%;
+	pointer-events: none;
+	transition: transform 0.1s ease-in-out;
+	transform: translate(-50%, -50%);
+	z-index: 10000;
+	background-color: rgba(0, 0, 0, 0.3);
+}
+
+body:hover .custom-cursor {
+	transform: scale(1.0); /* Slightly enlarge the cursor on hover */
+}
