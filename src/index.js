@@ -1,14 +1,15 @@
+import React from 'react';
 import ReactDOM from 'react-dom/client';
 import './index.css';
+import App from './App';
 import reportWebVitals from './reportWebVitals';
 
-import { App } from 'antd';
-
-
 const root = ReactDOM.createRoot(document.getElementById('root'));
-root.render(<App>
-	<h1>Welcome to Version 2024</h1>
-</App>);
+root.render(
+	<React.StrictMode>
+		<App />
+	</React.StrictMode>
+);
 
 // If you want to start measuring performance in your app, pass a function
 // to log results (for example: reportWebVitals(console.log))

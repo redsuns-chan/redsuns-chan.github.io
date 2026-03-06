@@ -1,0 +1,74 @@
+[
+	{
+		"company": "Speedy Group Corp. Limited",
+		"title": "Contract System Analyst / Contract Analyst Programmer",
+		"start": "Oct-2024",
+		"end": "Present",
+		"type": "T-Contract",
+		"description": "Department of Health (DH) Medical Device Information System (MDIS)",
+		"details": [
+			"Gather requirements with stakeholders and plan new features.",
+			"Build core features and enhancements with Java, Spring, Angular and MariaDB.",
+			"Coordinate SIT/UAT validation cycles and refine based on feedback.",
+			"Manage branch/version control across SIT, UAT and production using Git.",
+			"Support deployment and data patching with Shell Script and Python.",
+			"Handle technical inquiries from external users."
+		]
+	},
+	{
+		"company": "Manpower Services (Hong Kong) Limited",
+		"title": "Contract Analyst Programmer",
+		"start": "May-2023",
+		"end": "Aug-2024",
+		"type": "T-Contract",
+		"description": "SWD Computerized Social Security System II (CSSS-II)",
+		"details": [
+			"Enhanced backend batch functions using Java, Spring and Oracle DB.",
+			"Built automation scripts and executables for daily operations.",
+			"Prepared SIT and UAT test plans and supported production scheduling.",
+			"Managed IBM Workload Scheduler operations and job monitoring."
+		]
+	},
+	{
+		"company": "Swire Properties Limited",
+		"title": "Analyst Programmer",
+		"start": "Jun-2022",
+		"end": "May-2023",
+		"type": "Full-Time",
+		"description": "Internal CRM full-stack development",
+		"details": [
+			"Delivered Angular/TypeScript UI improvements.",
+			"Developed Spring Boot APIs for guest and receipt services.",
+			"Implemented data anonymization procedures for privacy compliance.",
+			"Performed production data patching and maintenance."
+		]
+	},
+	{
+		"company": "Hutchison Telecommunications Hong Kong Holdings Limited",
+		"title": "Java Developer",
+		"start": "Mar-2021",
+		"end": "Jun-2022",
+		"type": "Contract",
+		"description": "SoSIM app, partner gateway and B2B APIs",
+		"details": [
+			"Built REST APIs for Real-Name-Registration and voucher services.",
+			"Created OCR prototype for HKID recognition using Python/Tesseract.",
+			"Integrated OCR flow into RNR backend services.",
+			"Published OpenAPI/Swagger documents for integration teams."
+		]
+	},
+	{
+		"company": "PCCW Solutions Limited",
+		"title": "Solution Developer",
+		"start": "Jan-2020",
+		"end": "Mar-2021",
+		"type": "Full-Time",
+		"description": "iCRMS project for HKCSD",
+		"details": [
+			"Built visitation appointment platform connected via REST APIs.",
+			"Integrated JasperReports for PDF/Excel export.",
+			"Implemented multilingual front-end support with ngx-translate.",
+			"Led in-person UAT demonstrations with stakeholders."
+		]
+	}
+]

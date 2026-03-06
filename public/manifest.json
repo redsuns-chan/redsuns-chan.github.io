@@ -1,6 +1,9 @@
 {
-  "short_name": "RedSuns Portfolio",
-  "name": "RedSuns Chan | Full-Stack Software Engineer",
+  "short_name": "RedSuns",
+  "name": "RedSuns Chan | Software Engineer Portfolio",
+  "description": "Portfolio and resume website of RedSuns Chan (Chan Sze Ho), software engineer and AWS certified solutions architect.",
+  "lang": "en",
+  "dir": "ltr",
   "icons": [
     {
       "src": "favicon.ico",
@@ -18,8 +21,10 @@
       "sizes": "512x512"
     }
   ],
-  "start_url": ".",
+  "start_url": "/",
+  "scope": "/",
   "display": "standalone",
-  "theme_color": "#000000",
-  "background_color": "#ffffff"
+  "orientation": "portrait-primary",
+  "theme_color": "#0b1220",
+  "background_color": "#eef3ff"
 }

@@ -1,0 +1,352 @@
+.experience-wrap {
+	max-width: 1240px;
+	margin: 0 auto;
+	min-height: 100%;
+	padding: 22px 0;
+	display: flex;
+	flex-direction: column;
+}
+
+.section-heading {
+	text-align: center;
+	font-size: clamp(1.4rem, 4vw, 2.2rem);
+	margin-bottom: 18px;
+}
+
+.timeline {
+	position: relative;
+	overflow: visible;
+	padding: 6px 16px 0;
+	scrollbar-width: none;
+}
+
+.timeline::-webkit-scrollbar {
+	display: none;
+}
+
+.timeline::before {
+	content: '';
+	position: absolute;
+	left: 50%;
+	transform: translateX(-50%);
+	top: 0;
+	bottom: 0;
+	width: 3px;
+	background: linear-gradient(
+		180deg,
+		color-mix(in srgb, var(--accent-color) 66%, transparent) 0%,
+		var(--timeline-line) 30%,
+		color-mix(in srgb, var(--timeline-line) 65%, transparent) 100%
+	);
+}
+
+.timeline-item {
+	position: relative;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	width: 50%;
+	max-width: 50%;
+	padding: 0;
+	margin: 0 0 12px;
+	border: none;
+	background: transparent;
+	text-align: left;
+	cursor: pointer;
+	color: var(--text-color);
+	opacity: 0;
+	transform: translateY(24px);
+	animation: timelineIn 0.7s cubic-bezier(0.22, 1, 0.36, 1) forwards;
+	--item-strength: 1;
+	--item-progress: 0;
+}
+
+.timeline-item.left {
+	left: 0;
+	padding-right: 48px;
+}
+
+.timeline-item.right {
+	left: 50%;
+	padding-left: 48px;
+}
+
+.timeline-dot {
+	position: absolute;
+	left: calc(100% - 13px);
+	top: 24px;
+	width: 26px;
+	height: 26px;
+	border-radius: 50%;
+	display: grid;
+	place-items: center;
+	font-size: 0.82rem;
+	color: #fff;
+	background: color-mix(in srgb, var(--accent-color) calc(70% + var(--item-strength) * 25%), #ffffff);
+	box-shadow: 0 0 0 7px color-mix(in srgb, var(--bg-color) 75%, transparent);
+	opacity: calc(0.72 + var(--item-strength) * 0.28);
+	transition: transform 0.3s ease, box-shadow 0.3s ease, opacity 0.3s ease;
+}
+
+.timeline-item.right .timeline-dot {
+	left: -13px;
+}
+
+.timeline-item.edu .timeline-dot {
+	background: #2ec776;
+}
+
+.timeline-card {
+	width: 100%;
+	padding: 16px 18px;
+	border-radius: 18px;
+	color: var(--text-color);
+	position: relative;
+	border-color: color-mix(in srgb, var(--card-border) calc(40% + var(--item-strength) * 60%), transparent);
+	box-shadow: 0 12px 26px color-mix(in srgb, #000 calc((1 - var(--item-progress)) * 16%), transparent);
+	opacity: calc(0.6 + var(--item-strength) * 0.4);
+	transition: transform 0.32s ease, border-color 0.32s ease, opacity 0.32s ease, box-shadow 0.32s ease;
+}
+
+.timeline-item.newest .timeline-card {
+	transform: translateY(-1px) scale(1.01);
+	box-shadow: 0 18px 32px color-mix(in srgb, var(--accent-color) 22%, transparent);
+}
+
+.timeline-card h3,
+.timeline-card p,
+.dialog-content h3,
+.dialog-content p,
+.dialog-list li {
+	color: var(--text-color);
+}
+
+.timeline-date {
+	font-size: 0.88rem;
+	opacity: 0.75;
+	margin: 0 0 8px;
+}
+
+.timeline-company {
+	margin: 6px 0;
+	opacity: 0.85;
+}
+
+.timeline-summary {
+	margin: 6px 0 0;
+}
+
+.timeline-hint {
+	display: inline-flex;
+	align-items: center;
+	justify-content: center;
+	width: 28px;
+	height: 28px;
+	border-radius: 999px;
+	border: 1px solid var(--card-border);
+	margin-top: 8px;
+	font-size: 0.78rem;
+	color: var(--accent-color);
+	opacity: 0.9;
+	transition: transform 0.2s ease, background 0.2s ease;
+}
+
+.timeline-item:hover .timeline-hint {
+	transform: translateY(-1px);
+	background: color-mix(in srgb, var(--accent-color) 12%, transparent);
+}
+
+.timeline-item:hover .timeline-card,
+.timeline-item.active .timeline-card {
+	transform: translateY(-3px) scale(1.006);
+	border-color: color-mix(in srgb, var(--accent-color) 45%, var(--card-border));
+	opacity: 1;
+}
+
+.timeline-item:hover .timeline-dot,
+.timeline-item.active .timeline-dot {
+	transform: scale(1.18);
+	box-shadow: 0 0 0 10px color-mix(in srgb, var(--bg-color) 62%, transparent);
+}
+
+.dialog-list {
+	padding-left: 18px;
+	line-height: 1.5;
+}
+
+.dialog-overlay {
+	position: fixed;
+	inset: 0;
+	background: rgba(0, 0, 0, 0.52);
+	backdrop-filter: blur(8px) saturate(1.3);
+	-webkit-backdrop-filter: blur(8px) saturate(1.3);
+	display: none;
+	align-items: center;
+	justify-content: center;
+	padding: 16px;
+	z-index: 9999;
+	animation: overlayIn 0.2s ease;
+}
+
+.dialog-overlay.open {
+	display: flex;
+}
+
+.dialog-overlay.closing {
+	animation: overlayOut 0.2s ease forwards;
+}
+
+.dialog-content {
+	position: relative;
+	max-width: 640px;
+	width: 100%;
+	max-height: 80vh;
+	overflow: auto;
+	border-radius: 22px;
+	border: 1px solid var(--card-border);
+	padding: 24px;
+	background: var(--dialog-bg);
+	backdrop-filter: var(--backdrop-blur);
+	-webkit-backdrop-filter: var(--backdrop-blur);
+	animation: dialogIn 0.32s cubic-bezier(0.2, 0.9, 0.24, 1);
+}
+
+.dialog-content.closing {
+	animation: dialogOut 0.2s ease forwards;
+}
+
+.dialog-close {
+	position: absolute;
+	top: 10px;
+	right: 10px;
+	width: 34px;
+	height: 34px;
+	border-radius: 50%;
+	border: 1px solid var(--card-border);
+	background: transparent;
+	color: var(--text-color);
+	cursor: pointer;
+	transition: transform 0.15s ease, background 0.15s ease, border-color 0.15s ease;
+}
+
+.dialog-close:hover {
+	background: color-mix(in srgb, var(--accent-color) 18%, transparent);
+	border-color: color-mix(in srgb, var(--accent-color) 50%, var(--card-border));
+	transform: scale(1.05);
+}
+
+.dialog-close:active {
+	transform: scale(0.94);
+}
+
+@keyframes timelineIn {
+	from {
+		opacity: 0;
+		transform: translateY(24px) scale(0.97);
+	}
+	to {
+		opacity: 1;
+		transform: translateY(0) scale(1);
+	}
+}
+
+@keyframes dialogIn {
+	from {
+		opacity: 0;
+		transform: translateY(12px) scale(0.96);
+	}
+	to {
+		opacity: 1;
+		transform: translateY(0) scale(1);
+	}
+}
+
+@keyframes dialogOut {
+	from {
+		opacity: 1;
+		transform: translateY(0) scale(1);
+	}
+	to {
+		opacity: 0;
+		transform: translateY(8px) scale(0.98);
+	}
+}
+
+@keyframes overlayIn {
+	from {
+		opacity: 0;
+	}
+	to {
+		opacity: 1;
+	}
+}
+
+@keyframes overlayOut {
+	from {
+		opacity: 1;
+	}
+	to {
+		opacity: 0;
+	}
+}
+
+@media (max-width: 900px) {
+	.timeline::before {
+		left: 17px;
+		transform: none;
+	}
+
+	.timeline-item,
+	.timeline-item.left,
+	.timeline-item.right {
+		left: 0;
+		width: 100%;
+		max-width: 100%;
+		padding: 0 0 0 44px;
+		margin-bottom: 10px;
+	}
+
+	.timeline-card {
+		padding-left: 22px;
+	}
+
+	.timeline-dot,
+	.timeline-item.right .timeline-dot {
+		left: -10px;
+		top: 22px;
+	}
+}
+
+@media (max-width: 560px) {
+	.experience-wrap {
+		padding-top: 52px;
+	}
+
+	.timeline-card {
+		padding: 14px;
+	}
+
+	.dialog-content {
+		padding: 18px;
+	}
+}
+
+@media (min-width: 1200px) {
+	.experience-wrap {
+		max-width: 1360px;
+	}
+
+	.timeline-item.left {
+		padding-right: 36px;
+	}
+
+	.timeline-item.right {
+		padding-left: 36px;
+	}
+
+	.timeline-card {
+		padding: 20px 24px;
+		border-radius: 20px;
+		width: 612px;
+	}
+}

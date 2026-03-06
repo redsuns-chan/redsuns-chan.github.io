@@ -1,0 +1,18 @@
+[
+	{
+		"category": "Languages",
+		"items": ["Java", "TypeScript", "JavaScript", "Python", "SQL", "C#", "C++", "HTML5", "CSS"]
+	},
+	{
+		"category": "Frameworks & Databases",
+		"items": ["Spring Boot", "Angular", "Express.js", "Node.js", "React", "MongoDB", "MariaDB", "Oracle DB"]
+	},
+	{
+		"category": "Tools",
+		"items": ["Git", "GitHub", "Gitea", "GitLab", "Jenkins", "Jira", "Jasper Reports", "OpenShift", "AWS EC2", "IBM Workload Scheduler"]
+	},
+	{
+		"category": "Certification",
+		"items": ["AWS Certified Solutions Architect – Associate"]
+	}
+]
