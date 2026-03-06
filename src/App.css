@@ -21,6 +21,10 @@
 	justify-content: center;
 }
 
+.experience-section {
+	align-items: stretch !important;
+}
+
 .app-shell::before,
 .app-shell::after {
 	content: '';
